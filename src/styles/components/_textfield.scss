@@ -1,0 +1,59 @@
+.text-field {
+    min-height: 5.6rem;
+    // overflow: hidden;
+    display: inline-flex;
+    margin: 1.6rem auto;
+    padding: 0 1.6rem;
+    position: relative;
+
+    &--fullwidth {
+        width: 100%;
+    }
+
+    &__input {
+        align-self: flex-end;
+        border: none;
+        border-bottom: 1px solid $color-on-surface;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        line-height: 2;
+        height: 3.2rem;
+        outline: none;
+        // padding: 2rem 1.2rem .6rem;
+        width: 100%;
+
+        &:focus {
+            border-bottom: 1px solid $color-secondary;
+        }
+    }
+
+    textarea {
+        border: none;
+        border-bottom: 1px solid $color-on-surface;
+        box-sizing: border-box;
+        font-size: 1.6rem;
+        min-height: 9.6rem;
+        max-height: 51.2rem;
+        margin-top: 1.6rem;
+        outline: none;
+        padding-top: 1.6rem;
+        resize: vertical;
+        width: 100%;
+        
+        &:focus {
+            border-bottom: 1px solid $color-secondary;
+        }
+    }
+
+    &__label {
+        color: $color-on-surface;
+        cursor: text;
+        font-size: 1.2rem;
+        left: 1.6rem;
+        line-height: 1.5;
+        position: absolute;
+        top: 0;
+        // transform: translateY(-14px) scale(0.8);
+        width: 100%;
+    }
+}
